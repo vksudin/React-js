@@ -1,0 +1,27 @@
+import React from "react";
+// var React=require('react');
+import ReactDOM from "react-dom";
+
+// var ReactDOM=require('react-dom');
+import "./index.css";
+
+const name="Sudin Jana";
+const img1="https://picsum.photos/200/300";
+const img2="https://picsum.photos/250/350";
+const img3="https://picsum.photos/200/400";
+const links="https://www.thapatechnical.com/";
+ReactDOM.render(
+<React.Fragment>
+  <h1 className="heading">My name is {name}</h1>
+  <div className="img_div">
+  <img src={img1} alt="RandomImages"/>
+  
+  <img src={img2} alt="RandomIMages"/>
+  
+  <a href={links} target="blank">
+  <img src={img3} alt="RandomImages"/>
+  </a>
+  </div>
+    </React.Fragment>,
+document.getElementById('root'));
+
