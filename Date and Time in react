@@ -1,0 +1,26 @@
+var React=require('react');
+var ReactDOM=require('react-dom');
+
+const fname="Sudin";
+const lname="Jana";
+var currDate=new Date().toLocaleDateString();
+var currTime=new Date().toLocaleTimeString();
+// var hours=dr.getHours();
+// var mins=dr.getMinutes();
+// var seconds=dr.getSeconds();
+
+// var months=dr.getMonth();
+// var day=dr.getDate();
+// var year=dr.getFullYear();
+ReactDOM.render(
+<div>
+  <h1>My name is {`${fname} ${lname}`}</h1>
+  <br></br>
+  <p>Local date is ={currDate}</p>
+  <br></br>
+  <p>Local time is={currTime}</p>
+  {/* <p>The date is {`${day}/${months}/${year}`}</p>
+  <p>Today time is {hours+":"+mins+":"+seconds}</p> */}
+    </div>,
+document.getElementById('root'));
+
