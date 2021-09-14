@@ -1,0 +1,16 @@
+var React=require('react');
+var ReactDOM=require('react-dom');
+
+const fname="Sudin";
+const lname="Jana";
+
+ReactDOM.render(
+<React.Fragment>
+  {/* <h1>My name is {fname+" "+lname}</h1> 1st method */}
+
+  <h1>{`${fname} ${lname}`}</h1>;
+  <p>My lucky number is {Math.random()}
+  </p>
+    </React.Fragment>,
+document.getElementById('root'));
+
