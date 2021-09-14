@@ -1,0 +1,12 @@
+var React=require('react');
+var ReactDOM=require('react-dom');
+
+const myName="Sudin Jana";
+
+ReactDOM.render(
+<React.Fragment>
+  <h1>My name is {myName}</h1>
+  <p>My lucky number is {Math.random()}</p>
+    </React.Fragment>,
+document.getElementById('root'));
+
