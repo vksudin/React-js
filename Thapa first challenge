@@ -1,0 +1,18 @@
+var React=require('react');
+var ReactDOM=require('react-dom');
+
+ReactDOM.render(
+<React.Fragment>
+<h1>Top Netflix series</h1>
+
+<p>My favourite top netflix series</p>
+<ol>
+<li>Money heist</li>
+<li>Mirzapur</li>
+<li>The family man</li>
+<li>Kota factory</li>
+<li>Kota factory season 2</li>
+</ol>
+    </React.Fragment>,
+document.getElementById('root'));
+
