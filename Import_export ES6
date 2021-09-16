@@ -1,0 +1,36 @@
+//index.js
+import React from "react";
+// var React=require('react');
+import ReactDOM from "react-dom";
+
+import elements,{favprog,myName} from './App.jsx';
+// var ReactDOM=require('react-dom');
+
+
+
+
+ReactDOM.render(
+  <>
+    <ol>
+      <li>Sudin</li>
+      <li>elements</li>
+      <li>{favprog}</li>
+      <li>{myName()}</li>
+    </ol>
+  </>,
+  document.getElementById('root')
+);
+
+//App.jsx
+const youtuber="Take U Forward";
+
+const favprog="JAVA";
+
+function myName()
+{
+    let name="sudin";
+    return (name);
+}
+
+export {favprog,myName};
+export default youtuber;
