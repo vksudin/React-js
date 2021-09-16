@@ -1,0 +1,66 @@
+//Index.js 
+//Main code
+import React from "react";
+// var React=require('react');
+import ReactDOM from "react-dom";
+
+import App from './App.jsx';
+// var ReactDOM=require('react-dom');
+
+
+
+
+ReactDOM.render(
+  <>
+    <App/>
+  </>,
+  document.getElementById('root')
+);
+
+//App.jsx component
+import React from "react";
+
+import {add,mul,sub,div} from './Calc.jsx';
+
+function App()
+{
+    return(
+        <ol>
+        <li>The sum of two number is {add(4,5)}</li>
+        <li>The sub of two number is {sub(10,5)}</li>
+        <li>The division of two number is {div(10,3)}</li>
+        <li>The multiplication of two number is {mul(3,4)}</li>
+      </ol>
+    );
+}
+
+export default App;
+
+
+//Calc.jsx another component which contains addition multiplication division substraction
+function add(a,b)
+{
+    const c=(a+b);
+    return (c);
+}
+
+function mul(a,b)
+{
+    const c=(a*b);
+    return (c);
+}
+
+function div(a,b)
+{
+    const c=(a/b);
+    return (c);
+}
+
+function sub(a,b)
+{
+    const c=(a-b);
+    return (c);
+}
+
+export {add,mul,sub,div};
+
