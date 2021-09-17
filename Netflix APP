@@ -1,0 +1,66 @@
+//Main code index.js
+import React from "react";
+// var React=require('react');
+import ReactDOM from "react-dom";
+
+import Card from "./Cards.jsx";
+
+import Sdata from "./Sdata.jsx"
+// var ReactDOM=require('react-dom');
+
+
+function ndata(val)
+{
+  return(
+    <Card
+    imgsrc={val.imgsrc}
+    title={val.title}
+    sname={val.sname}
+    link={val.link}
+  />
+  );
+}
+
+
+ReactDOM.render(
+  <>
+  <h1>List Of Top 5 Netflix in 2020</h1>
+    <br></br>
+    <br></br>
+  
+  
+{Sdata.map(ndata)}
+  </>,
+  document.getElementById('root')
+);
+
+//Array file Sdata.jsx
+const Sdata=[
+    {
+       imgsrc:"https://wallpapercave.com/wp/wp4056410.jpg",
+       title:"A netflix series",
+       sname:"DARK",
+       link:"https://www.google.com/search?q=DARK&rlz=1C1CHBF_enIN887IN887&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiChIiLvYbzAhXXyTgGHZc2DLQQ_AUoAXoECAEQAw#imgrc=QtvovKGvGkgQgM"
+    },
+    {
+        imgsrc:"https://wallpapercave.com/w/wp7418473.jpg",
+        title:"A netflix series",
+        sname:"Extra Curricular",
+        link:"https://www.rottentomatoes.com/tv/extracurricular/s01"
+    },
+    {
+        imgsrc:"https://wallpapercave.com/w/wp1839580.jpg",
+    title:"A netflix series",
+    sname:"Strange Things",
+    link:"https://www.rottentomatoes.com/tv/stranger_things/s01"
+    },
+    {
+        imgsrc:"https://wallpapercave.com/w/Bs16Cwe.jpg",
+        title:"A netflix series",
+        sname:"A vampire Diaries",
+        link:"https://www.imdb.com/title/tt1405406/reviews"
+
+    }
+
+];
+export default Sdata;
