@@ -1,0 +1,65 @@
+//Main code index.js
+import React from "react";
+// var React=require('react');
+import ReactDOM from "react-dom";
+
+import Card from "./Cards.jsx";
+
+// var ReactDOM=require('react-dom');
+
+
+
+
+
+ReactDOM.render(
+  <>
+  <Card
+    imgsrc="https://wallpapercave.com/wp/wp4056410.jpg"
+    title="A netflix series"
+    sname="DARK"
+    link="https://www.google.com/search?q=DARK&rlz=1C1CHBF_enIN887IN887&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiChIiLvYbzAhXXyTgGHZc2DLQQ_AUoAXoECAEQAw#imgrc=QtvovKGvGkgQgM"
+  />
+  <Card
+    imgsrc="https://wallpapercave.com/w/wp7418473.jpg"
+    title="A netflix series"
+    sname="Extra Curricular"
+    link="https://www.rottentomatoes.com/tv/extracurricular/s01"
+  />
+  <Card
+    imgsrc="https://wallpapercave.com/w/wp1839580.jpg"
+    title="A netflix series"
+    sname="Strange Things"
+    link="https://www.rottentomatoes.com/tv/stranger_things/s01"
+  />
+  </>,
+  document.getElementById('root')
+);
+
+
+//Component Cards.jsx
+import React from 'react';
+
+function Card(props)
+{
+  return (
+    <>
+  <div className="cards">
+
+  <div className="card">
+    <img src={props.imgsrc} alt="myPic" className="card_img" width="100px" height="100px"/>
+    <div className="card_info">
+      <span className="card_category">{props.title}</span>
+      <h3 className="card_title">{props.sname}</h3>
+      <a href={props.link} target="blank">
+        <button> Watch Now </button>
+      </a>
+    </div>
+  </div>
+   
+  </div>
+ 
+  </>
+  );
+}
+
+export default Card;
