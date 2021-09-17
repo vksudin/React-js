@@ -1,0 +1,41 @@
+import React from "react";
+// var React=require('react');
+import ReactDOM from "react-dom";
+
+
+// var ReactDOM=require('react-dom');
+
+function Card(props)
+{
+  return (
+    <>
+  <div className="cards">
+
+  <div className="card">
+    <img src={props.imgsrc} alt="myPic" className="card_img"/>
+    <div className="card_info">
+      <span className="card_category">{props.title}</span>
+      <h3 className="card_title">{props.sname}</h3>
+      <a href={props.link} target="blank">
+        <button> Watch Now </button>
+      </a>
+    </div>
+  </div>
+   
+  </div>
+ 
+  </>
+  );
+}
+
+
+
+ReactDOM.render(
+  <Card
+    imgsrc="https://wallpapercave.com/wp/wp4056410.jpg"
+    title="A netflix series"
+    sname="DARK"
+    link="https://www.google.com/search?q=DARK&rlz=1C1CHBF_enIN887IN887&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiChIiLvYbzAhXXyTgGHZc2DLQQ_AUoAXoECAEQAw#imgrc=QtvovKGvGkgQgM"
+  />,
+  document.getElementById('root')
+);
